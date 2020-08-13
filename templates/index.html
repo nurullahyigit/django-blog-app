@@ -1,0 +1,31 @@
+{% extends "layout.html" %} <!-- index.html den miras aldı-->
+
+{% block body %}
+
+
+<div class="jumbotron text-center">
+    <h3> Yazılım Bilimi Bloğuna Hoşgeldiniz</h3>
+    <p>Bu logda geliştiriciler olarak blog yazılımlarını paylaşabilir ve insanlara yardımcı olabilirsiniz.  </p>
+</div>
+
+<p>
+
+{% for number in numbers  %}
+    <li>{{number}}</li>
+
+{% endfor %}
+
+</p>
+
+
+<p>
+
+{% if request.user.is_authenticated%}
+    Giriş Yapılmış,{{request.user.username}}
+
+{% else %}
+    Giriş Yapılmamış
+{% endif %}
+</p>
+
+{% endblock body %}
