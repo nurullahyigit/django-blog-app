@@ -55,3 +55,6 @@ python manage.py startapp user (projemizde, "user" uygulaması oluşturduk.)
 python da model de değişiklik yapılırsa, models.py de bir class da model eklenirse.. Djangoya modelin değiştiğini söylemek gerek.
 .. yani python manage.py makemigrations yazarak, bir dosya otomatik oluşturuluyor.
 .. python manage.py migrate yazarak da veritabanında oluşturuyoruz.sqlite dan bakılabilir.
+
+GIT
+git add . > tüm dosyaları ekler..
